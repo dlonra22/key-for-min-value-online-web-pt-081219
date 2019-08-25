@@ -4,11 +4,17 @@
 def key_for_min_value(name_hash)
    current_key = ""
    smaller_value = 0
+   cnt = 0
    if name_hash.length >= 1
+     
     name_hash.collect do |key, value|
-        smaller_value = value
-        if value
-        current_key = key
+        if cnt == 0 
+          current_key = key
+        elsif value < smaller_value
+          smaller_value = value
+          previous_key = key
+        end
+        
       end
       smaller_value = value
     end
