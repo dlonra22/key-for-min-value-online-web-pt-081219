@@ -14,9 +14,7 @@ def key_for_min_value(name_hash)
           smaller_value = value
           previous_key = key
         end
-        
       end
-      smaller_value = value
     end
     current_key
     else nil
