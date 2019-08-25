@@ -12,7 +12,7 @@ def key_for_min_value(name_hash)
           current_key = key
         elsif value < smaller_value
           smaller_value = value
-          previous_key = key
+          current_key = key
         end
       end
     current_key
